@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="Reverse Average Bytes per second <= 143.259\ngini = 0.739\nsamples = 3931\nvalue = [852, 1341, 894, 844]\nclass = ping", fillcolor="#e4fbe2"] ;
+1 [label="Forward Average Bytes per second <= 49.0\ngini = 0.006\nsamples = 1345\nvalue = [1, 1341, 3, 0]\nclass = ping", fillcolor="#48e53a"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Delta Reverse Packets <= 23.0\ngini = 0.444\nsamples = 3\nvalue = [1, 0, 2, 0]\nclass = telnet", fillcolor="#9ccef2"] ;
+1 -> 2 ;
+3 [label="gini = 0.5\nsamples = 2\nvalue = [1, 0, 1, 0]\nclass = dns", fillcolor="#ffffff"] ;
+2 -> 3 ;
+4 [label="gini = 0.0\nsamples = 1\nvalue = [0, 0, 1, 0]\nclass = telnet", fillcolor="#399de5"] ;
+2 -> 4 ;
+5 [label="Forward Average Packets per second <= 36.038\ngini = 0.001\nsamples = 1342\nvalue = [0, 1341, 1, 0]\nclass = ping", fillcolor="#47e539"] ;
+1 -> 5 ;
+6 [label="gini = 0.0\nsamples = 1341\nvalue = [0, 1341, 0, 0]\nclass = ping", fillcolor="#47e539"] ;
+5 -> 6 ;
+7 [label="gini = 0.0\nsamples = 1\nvalue = [0, 0, 1, 0]\nclass = telnet", fillcolor="#399de5"] ;
+5 -> 7 ;
+8 [label="Forward Average Packets per second <= 8.492\ngini = 0.666\nsamples = 2586\nvalue = [851, 0, 891, 844]\nclass = telnet", fillcolor="#fafdfe"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="Reverse Average Packets per second <= 4.667\ngini = 0.5\nsamples = 1695\nvalue = [851, 0, 0, 844]\nclass = dns", fillcolor="#fffefd"] ;
+8 -> 9 ;
+10 [label="gini = 0.0\nsamples = 850\nvalue = [850, 0, 0, 0]\nclass = dns", fillcolor="#e58139"] ;
+9 -> 10 ;
+11 [label="Forward Average Bytes per second <= 359.0\ngini = 0.002\nsamples = 845\nvalue = [1, 0, 0, 844]\nclass = voice", fillcolor="#d739e5"] ;
+9 -> 11 ;
+12 [label="gini = 0.0\nsamples = 844\nvalue = [0, 0, 0, 844]\nclass = voice", fillcolor="#d739e5"] ;
+11 -> 12 ;
+13 [label="gini = 0.0\nsamples = 1\nvalue = [1, 0, 0, 0]\nclass = dns", fillcolor="#e58139"] ;
+11 -> 13 ;
+14 [label="gini = 0.0\nsamples = 891\nvalue = [0, 0, 891, 0]\nclass = telnet", fillcolor="#399de5"] ;
+8 -> 14 ;
+}
